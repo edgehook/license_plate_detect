@@ -1,0 +1,8 @@
+train: datasets/ccpd/train/images/
+val: datasets/ccpd/val/images/ 
+
+# number of classes
+nc: 1
+
+# class names
+names: [ 'plate' ]
