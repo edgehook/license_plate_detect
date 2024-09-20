@@ -265,7 +265,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--detect_model', nargs='+', type=str, default='weights/plate_detect.pt', help='model.pt path(s)')  #检测模型
     parser.add_argument('--rec_model', type=str, default='weights/plate_rec_color.pth', help='model.pt path(s)')#车牌识别+颜色识别模型
-    parser.add_argument('--is_color', type=bool, default=True, help='plate color')      #是否识别颜色
+    parser.add_argument('--is_color', type=bool, default=False, help='plate color')      #是否识别颜色
     parser.add_argument('--image_path', type=str, default='imgs', help='source')     #图片路径
     parser.add_argument('--img_size', type=int, default=640, help='inference size (pixels)')  #网络输入图片大小
     parser.add_argument('--width', type=int, default=1920, help='camera width')  # camera width
